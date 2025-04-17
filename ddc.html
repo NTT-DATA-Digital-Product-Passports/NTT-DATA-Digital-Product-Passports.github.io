@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+<meta name="viewport" content="width=devide-width",
+"intial-scale=1.0">
+<title>Digital Data Chain</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+</head>
+<body>
+<nav>
+<a style="text-decoration:none" href="home.html"><img src="images/logo.png" alt="" class="logo"></a>
+<ul id="menu-links">
+	<li><a style="text-decoration:none" href="dpp.html">Digital Product Passport</a></li>
+	<li><a style="text-decoration:none" href="dtc.html">Digital Data Chain</a></li>
+	<li><a style="text-decoration:none" href="about.html">About Us</a></li>
+    <li>Services</li>
+</ul>
+<button class="nav-btn">Get Started <img src="images/arrow-white.png" alt=""></button>
+	<img src="images/menu.png" alt="" class="menu-icon" onclick="toogleMenu()">
+</nav>
+<div class="header">
+<div class="header-content">
+
+<p><a href="images/Scrum.pdf">Digital Data Chain</a></p>
+<p>Click on the image to download it:<p>
+<a href="images/Scrum.pdf" download>
+  <img src="images/download.png" alt="Download" width="30" height="30">
+</a>
+</br>
+<div id="piechart"></div>
+</div>
+</div>
+<script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
+<script type="text/javascript">
+
+// Load google charts
+google.charts.load('current', {'packages':['corechart']});
+google.charts.setOnLoadCallback(drawChart);
+
+// Draw the chart and set the chart values
+function drawChart() {
+  var data = google.visualization.arrayToDataTable([
+  ['Task', 'Hours per Day'],
+  ['Rated Capacity', 8],
+  ['Remaining Capacity', 2],
+ // ['TV', 4],
+ // ['Gym', 2],
+ // ['Sleep', 8]
+]);
+
+  // Optional; add a title and set the width and height of the chart
+  var options = {'title':'Performance and Durability', 'width':550, 'height':400};
+
+  // Display the chart inside the <div> element with id="piechart"
+  var chart = new google.visualization.PieChart(document.getElementById('piechart'));
+  chart.draw(data, options);
+}
+</script>
+
+</body>
+</html>
