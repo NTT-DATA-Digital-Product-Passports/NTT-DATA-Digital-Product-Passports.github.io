@@ -19,7 +19,10 @@
   <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
 
   <!-- fonts style -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Poppins:400,600,700&display=swap" rel="stylesheet" />
+ <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@100;300;400;500;700;900&amp;display=swap" rel="stylesheet">
 
   <!-- Custom styles for this template -->
   <link href="css/style.css" rel="stylesheet" />
@@ -43,7 +46,8 @@
           <nav class="navbar navbar-expand-lg custom_nav-container">
             <a class="navbar-brand" href="index.html">
               <span>
-                <a style="text-decoration:none" href="index.html"><img src="images/logo.png" alt="" width="20%"></a>
+                <a style="text-decoration:none;width:50%;" href="index.html">
+				<img src="images/logo.png" alt="" width="30%" style="width: 200px;"></a>
               </span>
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -381,7 +385,7 @@
                 Individual Scope
               </h6>
               <p>
-              Do you have questions or concerns that you don't find here? Let's talk about it. We address all individual requests and support the implementation of DPPs end-to-end.</p>
+              Do you have questions or concerns that you don't find here? Let's talk about it. We address all individual requests and support the implementation of Digital Product Passport's end-to-end.</p>
               <a href="service.html">
                 Read More
               </a>
@@ -491,7 +495,7 @@
         <div class="col-md-4 col-sm-6 mx-auto ">
           <div class="box">
             <div class="img-box">
-              <img src="images/t1.png" alt="">
+              <img src="images/Miriam.jpg" alt="">
             </div>
             <div class="detail-box">
               <h5>
@@ -506,7 +510,7 @@
         <div class="col-md-4 col-sm-6 mx-auto ">
           <div class="box">
             <div class="img-box">
-              <img src="images/t1.png" alt="">
+              <img src="images/Tobias.jpg" alt="">
             </div>
             <div class="detail-box">
               <h5>
@@ -521,7 +525,7 @@
         <div class="col-md-4 col-sm-6 mx-auto ">
           <div class="box">
             <div class="img-box">
-              <img src="images/t1.png" alt="">
+              <img src="images/Calvin.jpg" alt="">
             </div>
             <div class="detail-box">
               <h5>
@@ -560,24 +564,24 @@
       <div class="">
         <div class="row">
           <div class="col-md-7 mx-auto">
-            <form action="#">
+            <form action="mailto:ankita.kanhere@emeal.nttdata.com" method="post" enctype="text/plain">
               <div class="contact_form-container">
                 <div>
                   <div>
-                    <input type="text" placeholder="Full Name" />
+                    <input type="text" placeholder="Full Name" id="name" name="name"/>
                   </div>
                   <div>
-                    <input type="email" placeholder="Email " />
+                    <input type="email" placeholder="Email" id="email" name="email" />
                   </div>
-                  <div>
+                 <!--  <div>
                     <input type="text" placeholder="Phone Number" />
-                  </div>
+                  </div>-->
                   <div class="">
-                    <input type="text" placeholder="Message" class="message_input" />
+                    <input type="text" placeholder="Message" id="message" name="message" class="message_input" />
                   </div>
                   <div class="btn-box ">
                     <button type="submit">
-					<a style="color: white;" href="mailto:ankita.kanhere@emeal.nttdata.com">Send</a>
+					Send
                   
                     </button>
                   </div>

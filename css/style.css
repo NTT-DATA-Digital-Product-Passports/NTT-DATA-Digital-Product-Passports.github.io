@@ -1,6 +1,6 @@
 @import url("font-awesome.min.css");
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'Noto Sans';
   color: #0c0c0c;
   background-color: #ffffff;
 }
@@ -203,7 +203,7 @@ body {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  background-color: #070f26;
+  background-color:#132967;
 }
 
 a,
