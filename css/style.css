@@ -1,7 +1,7 @@
 @import url("font-awesome.min.css");
 body {
   font-family: 'Noto Sans';
-  color: #0c0c0c;
+  color: #070f26;
   background-color: #ffffff;
 }
 
@@ -145,7 +145,7 @@ body {
 .header_section .nav_container {
   margin: 0 auto;
 }
-
+/*
 .header_top {
   background-color: #070f26;
   padding: 15px 0;
@@ -176,7 +176,7 @@ body {
   color: #ffc400;
   margin-right: 5px;
 }
-
+*/
 #navbarSupportedContent {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
@@ -203,7 +203,7 @@ body {
 }
 
 .custom_nav-container .navbar-nav .nav-item:hover .nav-link, .custom_nav-container .navbar-nav .nav-item.active .nav-link {
-  background-color:#132967;
+  background-color: #132967;
 }
 
 a,
